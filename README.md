@@ -13,7 +13,7 @@ Each folder in this repository represents a separate EDA project. Inside each pr
 - **Reports (`.pdf`, `.md`)**: Summaries of findings and insights from the EDA.
 
 Example structure:
-
+```text
 My-EDAs/
 │
 ├── Basic EDA for hepatitis dataset/
@@ -25,7 +25,7 @@ My-EDAs/
 │ ├── ...
 │
 └── README.md
-
+```
 
 ---
 
