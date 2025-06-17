@@ -1,71 +1,102 @@
-# My-EDAs
+# 🧠 My-EDAs
 
-Welcome to **My-EDAs**! This repository is a collection of Exploratory Data Analysis (EDA) projects on a variety of datasets. Each EDA is organized in its own folder, containing notebooks, datasets, and reports that document the data exploration, visualization, and key findings.
+This repository contains my Exploratory Data Analysis (EDA) projects, each organized into its own folder. Every folder includes the dataset, analysis scripts, and visuals related to a specific dataset.
 
 ---
 
-## 🗂️ Repository Structure
+## 📁 Folder Structure
 
-Each folder in this repository represents a separate EDA project. Inside each project folder, you will typically find:
-
-- **Jupyter Notebooks (`.ipynb`)**: The main code for data exploration and visualization.
-- **Raw Datasets (`.csv` or similar)**: The data files used for analysis.
-- **Reports (`.pdf`, `.md`)**: Summaries of findings and insights from the EDA.
-
-Example structure:
-```text
+```text 
 My-EDAs/
-│
-├── Basic EDA for hepatitis dataset/
-│ ├── main.ipynb
+├── Basic EDA of Hepatitis Dataset/
 │ ├── hepatitis.csv
-│ └── final_report.pdf
-│
-├── [Other EDA Project]/
-│ ├── ...
-│
-└── README.md
+│ └── eda.ipynb
+├── README.md
+└── (More folders coming soon...)
 ```
 
----
+Each folder is:
 
-## 📋 List of EDA Projects
-
-- **Basic EDA for hepatitis dataset**  
-  Exploratory analysis of clinical and survival data for hepatitis patients.
-
-- *(Add more project folders as you create them!)*
+- Fully self-contained  
+- Focused on one dataset  
+- Easy to browse, understand, and build upon  
 
 ---
 
-## 🚀 How to Use
+## 🚀 Git Setup Info
 
-1. **Clone this repository:**
+### 🔹 Where Git is Initialized
 
+Git is initialized at the **top-level folder**: `My-EDAs/`.
+
+That means:
+
+- All subfolders (like `Basic EDA of Hepatitis Dataset/`) are part of **one single Git repo**
+- You should **not** run `git init` inside the subfolders
+
+---
+
+### 🔹 Notes for Collaborators
+
+This is a **monorepo-style setup**, where multiple EDA projects live inside one Git repository.
+
+If you want to work on **just one subfolder**, here are your options:
+
+---
+
+#### ✅ Option 1: Clone the whole repo and work on your part
+
+```text 
 git clone https://github.com/PheonixLione/My-EDAs.git
+```
 
+Then:
 
-2. **Navigate to the project folder** you are interested in.
-
-3. **Open the Jupyter Notebook** (`.ipynb`) in your preferred environment (Jupyter Notebook, JupyterLab, VSCode, etc.).
-
-4. **Run the cells** to reproduce the analysis and visualizations.
-
-5. **Check the PDF/Markdown reports** for summarized insights.
+- Go into the folder you want to work on
+- Make your changes
+- Commit the changes
+- Push to your fork or branch
 
 ---
 
-## 🤝 Contributing
+#### ✅ Option 2: Copy just the folder and make a new repo
 
-Contributions are welcome!  
-If you have suggestions, find issues, or want to add your own EDA, feel free to fork the repository and submit a pull request.
+If you only want a specific subfolder (like `Basic EDA of Hepatitis Dataset/`) and don’t care about the rest of the repo:
+
+- Copy that folder to your system
+- Initialize a new Git repo inside it:
+
+```text
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <your-new-repo-url>
+git push -u origin main
+```
+
+> ⚠️ This will create a new standalone GitHub repo for that folder, separate from this one.
+
+---
+
+## 🙌 Contributions
+
+If you’d like to add your own EDA on a dataset:
+
+1. 🔀 Fork this repo
+2. 📁 Create a new folder with a clear and descriptive name
+3. 📂 Add your code, dataset, and outputs
+4. 🚀 Open a Pull Request
 
 ---
 
 ## 📬 Contact
 
-For questions or feedback, please open an issue in this repository.
+Got questions or suggestions?
+
+- Open an Issue
+- Or submit a Pull Request
+
+Let’s make data exploration easier together!
 
 ---
 
-**Happy Exploring!**
