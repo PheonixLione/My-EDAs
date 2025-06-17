@@ -1,4 +1,4 @@
-# 🧠 My-EDAs
+# 🧠 My-EDAs 
 
 This repository contains my Exploratory Data Analysis (EDA) projects, each organized into its own folder. Every folder includes the dataset, analysis scripts, and visuals related to a specific dataset.
 
